@@ -4,8 +4,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>kotleta</title>
-    <meta name="description" content="kotleba">
+    <title>Kotleta</title>
+    <meta name="description" content="Prečo nevoliť ĽSNS">
+    <meta name="keywords" content="kotleba,lsns,volby,parlament,politika,ľudova strana naše slovensko">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAAQMAAAD58POIAAAAA1BMVEVGRkbq8cCOAAAAGElEQVR4Xu3AMQEAAADCIPuntsUuWAwA4AiAAAG9Bh3MAAAAAElFTkSuQmCC" />
     <style>
       html,
       body {
@@ -19,8 +22,14 @@
         padding: 0 20px;
         background: #464646;
         color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
         -webkit-font-smoothing: antialiased;
@@ -63,7 +72,6 @@
     </style>
   </head>
 <body>
-
   <div>
     {% for article in site.articles %}
       <a href="{{ article.url }}" class="article" rel="nofollow">{{ article.name }}</a>
@@ -76,6 +84,13 @@
       var articles = document.querySelectorAll('.article')
       articles[Math.floor(Math.random() * articles.length)].className += ' visible'
     })();
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-87468215-1', 'auto');
+    ga('send', 'pageview');
   </script>
 </body>
 </html>
