@@ -1,6 +1,17 @@
 ---
-layout: default
-title: Kotleta
 ---
-
-Author: {{ site.author }}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kotleta</title>
+    <meta name="description" content="">
+    <style></style>
+  </head>
+<body>
+  Articles:
+  {% for article in site.articles %}
+    <h4>{{ article.name }}: {{ article.url }}</h4>
+  {% endfor %}
+</body>
+</html>
