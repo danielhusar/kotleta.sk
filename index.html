@@ -24,7 +24,7 @@
       var articles = document.querySelectorAll('.article')
       articles[Math.floor(Math.random() * articles.length)].className += ' visible'
 
-      if (navigator.doNotTrack) {
+      if (navigator.doNotTrack === '1') {
         return;
       }
 
