@@ -1,3 +1,6 @@
+sass:
+  style: compressed
+
 articles:
   - url: "http://www.aktuality.sk/clanok/384171/roky-sleduje-kotlebovcov-v-banskej-bystrici-ozili-mafianske-praktiky/"
     name: "V Banskej Bystrici ožili „mafiánske“ praktiky"
@@ -62,7 +65,7 @@ articles:
   - url: "http://www.hospodarenieobci.sk/rebricky/?typ=v&fz=skore%2Ci1%2Ci5%2Ci6%2Ci9%2Ci12&year=2015&sort=fzskore%7Cdesc&show=1-25"
     name: "Hospodárenie miest, obcí a VÚC"
   - url: "https://domov.sme.sk/c/20613330/nacisti-sa-schadzaju-na-slovensku-policia-to-neriesi.html#ixzz4o3IFPRjr"
-    name: "Neonacisti sa schádzajú na Slovensku, polícia mlčí"   
+    name: "Neonacisti sa schádzajú na Slovensku, polícia mlčí"
   - url: "https://dennikn.sk/blog/nova-krv-a-nadej-kotlebovej-strany/"
     name: "Nová krv a nádej Kotlebovej strany"
   - url: "https://www.aktuality.sk/clanok/515674/extremistu-magata-pravoplatne-odsudili-zupanom-nebude/"
