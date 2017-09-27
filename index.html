@@ -20,7 +20,7 @@
 <body>
   <section class="articles">
     <div class="container">
-      {% for article in site.articles %}
+      {% for article in site.articles reversed %}
         <div class="article article__{{ forloop.index | modulo: 5 }}">
           <a href="{{ article.url }}" rel="nofollow" class="article__link" target="_blank">{{ article.name }}</a>&nbsp;<img src="/media/emoji/{{ forloop.index | modulo: 9 }}.png" alt="" width="40">
         </div>
