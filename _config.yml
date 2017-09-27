@@ -1,6 +1,11 @@
 sass:
   style: compressed
 
+spacers:
+  - 1
+  - 2
+  - 3
+
 articles:
   - url: "http://www.aktuality.sk/clanok/384171/roky-sleduje-kotlebovcov-v-banskej-bystrici-ozili-mafianske-praktiky/"
     name: "V Banskej Bystrici ožili „mafiánske“ praktiky"

@@ -4,27 +4,37 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Kotleta</title>
+    <title>Prečo nevoliť ĽSNS</title>
     <meta name="description" content="Prečo nevoliť ĽSNS">
     <meta name="keywords" content="kotleba,lsns,volby,parlament,politika,ľudova strana naše slovensko">
     <meta name="viewport" content="initial-scale=1, width=device-width">
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAAQMAAAD58POIAAAAA1BMVEVGRkbq8cCOAAAAGElEQVR4Xu3AMQEAAADCIPuntsUuWAwA4AiAAAG9Bh3MAAAAAElFTkSuQmCC">
+    <meta property="og:title" content="Prečo nevoliť ĽSNS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.kotleta.sk" />
+    <meta property="og:image" content="https://www.kotleta.sk/media/social.png" />
+    <meta property="og:description" content="" />
+
+    <link rel="shortcut icon" type="image/png" href="/media/favicon.png">
     <link rel="stylesheet" media="all" href="/style.css">
   </head>
 <body>
-  <div>
-    {% for article in site.articles %}
-      <a href="{{ article.url }}" class="article" rel="nofollow">{{ article.name }}</a>
-    {% endfor %}
-  </div>
+  <section class="articles">
+    <div class="container">
+      {% for article in site.articles %}
+        <div class="article article__{{ forloop.index | modulo: 5 }}">
+          <a href="{{ article.url }}" rel="nofollow" class="article__link" target="_blank">{{ article.name }}</a>&nbsp;<img src="/media/emoji/{{ forloop.index | modulo: 9 }}.png" alt="" width="40">
+        </div>
+      {% endfor %}
 
-  <a href="https://github.com/danielhusar/kotleta.sk"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="//aral.github.io/fork-me-on-github-retina-ribbons/right-grey@2x.png?bump" alt="Fork me on GitHub"></a>
+      <div class="articles__footer">
+        <a href="https://github.com/danielhusar/kotleta.sk/blob/gh-pages/_config.yml" target="_blank">Pridaj dôvod</a>
+      </div>
+    </div>
+  </section>
+
   <script>
     (function() {
-      var articles = document.querySelectorAll('.article')
-      articles[Math.floor(Math.random() * articles.length)].className += ' visible'
-
-      if (navigator.doNotTrack === '1') {
+      if (window.navigator.doNotTrack === '1') {
         return;
       }
 
